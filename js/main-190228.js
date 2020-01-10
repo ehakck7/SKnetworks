@@ -2,27 +2,27 @@ $(document).ready(function(){
 	// header lang
 	$('.lang').click(function(e){
 		e.preventDefault();
-		$('.langwrap').toggleClass('on');
+		$('.lang-wrap').toggleClass('on');
 	})
 
 	// gnb
 	$('.lines').click(function(e){
 		e.preventDefault();
-		$('.gnbwrap').addClass('on');
+		$('.gnb-wrap').addClass('on');
 		$('#header').css('display', 'none')
 	})
 
-	$('.close_btn').click(function(e){
+	$('.close-btn').click(function(e){
 		e.preventDefault();
 		$('#header').css('display', 'block')
-		$('.gnbwrap').removeClass('on');
+		$('.gnb-wrap').removeClass('on');
 	})
 
 	//아코디언 메뉴
-	$('.sub_title').click(function(e){
+	$('.sub-title').click(function(e){
 		e.preventDefault();
 		if($(this).hasClass('on')==false){
-			$('.sub_title').addClass('close').removeClass('on')
+			$('.sub-title').addClass('close').removeClass('on')
 			$(this).addClass('on').removeClass('close')
 
 			$(this).next().slideDown();
@@ -31,17 +31,12 @@ $(document).ready(function(){
 	})
 
 	//press 슬라이드
-	$('.pressul').bxSlider({
-		mode: 'horizontal', 
-		auto: true,
+	$('.press-list').bxSlider({
 		speed: 1000,  
 		pause: 4000, 
 		controls: false, 
-		pager: true, 
 		infiniteLoop: true, 
-		tickerHover: true, 
 		touchEnabled: true, 
-		useCSS: false,
 		slideWidth: 1000,
 		slideMargin: 20,
 		minSlides: 2,   
@@ -50,30 +45,30 @@ $(document).ready(function(){
 
 	/* public */
 	var listint
-	$('.public_sub li').click(function(e){
+	$('.public-sub li').click(function(e){
 		e.preventDefault();
 		listint = $(this).index();
 
-		$('.public_sub li').removeClass('on')
+		$('.public-sub li').removeClass('on')
 		$(this).addClass('on')
 
 		public(listint);
 	})
 
 	function public(num){
-		$('.public_cont li').removeClass('on');
-		$('.public_cont li').eq(num).addClass('on');
+		$('.public-cont li').removeClass('on');
+		$('.public-cont li').eq(num).addClass('on');
 	}
 
-	$('.info_btn').click(function(e){
+	$('.info-btn').click(function(e){
 		e.preventDefault();
 		$(this).toggleClass('on');
 
 		if($(this).hasClass('on')==true){
-			$(this).find('.btn_txt').text('자막열기')
+			$(this).find('.btn-txt').text('자막열기')
 		}
 		else{
-			$(this).find('.btn_txt').text('자막닫기')
+			$(this).find('.btn-txt').text('자막닫기')
 		}
 	})
 })

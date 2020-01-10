@@ -1,23 +1,22 @@
 @charset "utf-8";
 
-#wrap{position: relative; width: 100%;}
 /* header */
 .header{position: relative; width: 81.5%; height: 80px; margin: 0 auto;}
 .logo{position: absolute; top: 50%; left: 0; transform: translate(0, -50%);}
 
-.top_menu{display: block; position: absolute; top: 50%; right: 0; transform: translate(0, -50%);}
+.top-menu{display: block; position: absolute; top: 50%; right: 0; transform: translate(0, -50%);}
 .lang{display: inline-block; margin-right: 10px;}
 
 /* display:none */
-.langwrap{display: none; position: absolute; top: 90px; right: 10px; z-index: 2;}
-.langwrap.on{display: block;}
-.lang_sub{width: 115px; height: 110px; padding: 13px; background: #fff;}
-.lang_sub li{position: relative; line-height: 2;}
-.lang_sub li a{display: block; transition: all 0.3s ease;}
-.lang_sub li .eff{display: block; position: absolute; top: 16px; right: 15px; width: 30px; height: 1px; background: #ff646e; opacity: 0; transition: all 0.5s ease;}
+.lang-wrap{display: none; position: absolute; top: 90px; right: 10px; z-index: 2;}
+.lang-wrap.on{display: block;}
+.lang-sub{width: 115px; height: 110px; padding: 13px; background: #fff;}
+.lang-sub li{position: relative; line-height: 2;}
+.lang-sub li a{display: block; transition: all 0.3s ease;}
+.lang-sub li .eff{display: block; position: absolute; top: 16px; right: 15px; width: 30px; height: 1px; background: #ff646e; opacity: 0; transition: all 0.5s ease;}
 
-.lang_sub li:hover a{color: #ff646e}
-.lang_sub li:hover .eff{opacity: 1;}
+.lang-sub li:hover a{color: #ff646e}
+.lang-sub li:hover .eff{opacity: 1;}
 .tri{display: block; position: absolute; top: 0; left: 50%; width: 10px; height: 10px; background: #fff; transform: translate(-50%, -50%) rotate(45deg);}
 
 .lines{display: inline-block; position: relative; font-size: 0; line-height: 0; vertical-align: middle;}
@@ -26,20 +25,20 @@
 .lines .line3{display: block; width: 33px; height: 3px; background: #ff646e;}
 
 /* gnb display:none */
-.gnbwrap{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; color: #fff; background: rgba(255,255,255,0.5); z-index: 999;}
-.gnbwrap.on{display: block;}
-.gnbwrap a{color: #fff;}
+.gnb-wrap{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; color: #fff; background: rgba(255,255,255,0.5); z-index: 999;}
+.gnb-wrap.on{display: block;}
+.gnb-wrap a{color: #fff;}
 .gnb{position: relative; float: right; width: 450px; height: 100%; background: #ff646e; z-index: 9999;}
 
-.close_btn{display: block;  position: absolute; top: 40px; right: 20px; width: 33px; height: 33px;}
-.close_btn .line1{display: block; position: absolute; top: 50%; left: 0; width: 33px; height: 3px; background: #fff; transform: translate(0, -50%) rotate(45deg);}
-.close_btn .line2{display: block; position: absolute; top: 50%; left: 0; width: 33px; height: 3px; background: #fff; transform: translate(0, -50%) rotate(-45deg);}
+.close-btn{display: block;  position: absolute; top: 40px; right: 20px; width: 33px; height: 33px;}
+.close-btn .line1{display: block; position: absolute; top: 50%; left: 0; width: 33px; height: 3px; background: #fff; transform: translate(0, -50%) rotate(45deg);}
+.close-btn .line2{display: block; position: absolute; top: 50%; left: 0; width: 33px; height: 3px; background: #fff; transform: translate(0, -50%) rotate(-45deg);}
 
-.gnbul{padding-top: 30%;}
-.sub_title{position: relative; padding: 20px 0 20px 20%; font-size: 26px;}
-.sub_title a{display: block;}
-.submenu_btn{display: block; position: absolute; top: 50%; left: 50%; transform: translate(0, -50%) rotate(180deg); width: 7px; height: 4px; background: url(../images/sprites.png) no-repeat -431px -12px;}
-.sub_title.on .submenu_btn{transform: rotate(0deg);}
+.gnb-list{padding-top: 30%;}
+.sub-title{position: relative; padding: 20px 0 20px 20%; font-size: 26px;}
+.sub-title a{display: block;}
+.submenu-btn{display: block; position: absolute; top: 50%; left: 50%; transform: translate(0, -50%) rotate(180deg); width: 7px; height: 4px; background: url(../images/sprites.png) no-repeat -431px -12px;}
+.sub-title.on .submenu-btn{transform: rotate(0deg);}
 
 .submenu{display: none; padding-left: 23%;}
 .submenu.on{display: block;}
@@ -48,6 +47,6 @@
 .submenu ul li .eff{display: block; position: absolute; top: 16px; left: 150px; width: 30px; height: 1px; background: #fff; opacity: 0; transition: all 0.5s ease;}
 .submenu ul li:hover .eff{opacity: 1;}
 
-.gnb_bot{display: block; position: absolute; bottom: 5%; left: 20%; padding-top: 10px; border-top: 1px solid #fff;}
-.gnb_bot a{margin-right: 5px;}
+.gnb-bot{display: block; position: absolute; bottom: 5%; left: 20%; padding-top: 10px; border-top: 1px solid #fff;}
+.gnb-bot a{margin-right: 5px;}
 
