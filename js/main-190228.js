@@ -17,16 +17,22 @@ var skAction = {
 	},
 
 	gnbAction : function(){
+		function gnbClose(){
+			$('.header').css('display', 'block')
+			$('.gnb-wrap').removeClass('on');
+			$('html').css('overflow', 'auto')
+		}
+
 		$('.lines').click(function(e){
 			e.preventDefault();
 			$('.gnb-wrap').addClass('on');
 			$('.header').css('display', 'none')
+			$('html').css('overflow', 'hidden')
 		})
 		
 		$('.close-btn').click(function(e){
 			e.preventDefault();
-			$('.header').css('display', 'block')
-			$('.gnb-wrap').removeClass('on');
+			gnbClose()
 		})
 
 		$('.sub-title').click(function(e){
@@ -41,8 +47,7 @@ var skAction = {
 
 		$('.gnb-wrap').click(function(e){
 			if(e.target.className == 'gnb-wrap on'){
-				$('.header').css('display', 'block')
-				$('.gnb-wrap').removeClass('on');
+				gnbClose()
 			}
 		})
 	},
