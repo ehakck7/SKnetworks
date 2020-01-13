@@ -27,13 +27,14 @@
 .gnb-wrap{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; color: #fff; background: rgba(255,255,255,0.5); z-index: 999;}
 .gnb-wrap.on{display: block;}
 .gnb-wrap a{color: #fff;}
-.gnb{position: relative; float: right; width: 450px; height: 100%; margin-bottom: 30%; background: #ff646e; z-index: 9999;}
+.gnb{overflow-y: auto; position: relative; float: right; width: 450px; height: 100%; background: #ff646e; z-index: 9999;}
+.gnb .gnb-inner{position: relative; margin-top: 30%; padding-bottom: 61px;}
 
 .close-btn{display: block;  position: absolute; top: 40px; right: 20px; width: 33px; height: 33px;}
 .close-btn .line1{display: block; position: absolute; top: 50%; left: 0; width: 33px; height: 3px; background: #fff; transform: translate(0, -50%) rotate(45deg);}
 .close-btn .line2{display: block; position: absolute; top: 50%; left: 0; width: 33px; height: 3px; background: #fff; transform: translate(0, -50%) rotate(-45deg);}
 
-.gnb-list{padding-top: 30%;}
+.gnb-list{margin-bottom: 30px;}
 .sub-title{position: relative; padding: 20px 0 20px 20%; font-size: 26px;}
 .sub-title a{display: block;}
 .submenu-btn{display: block; position: absolute; top: 50%; left: 50%; transform: translate(0, -50%) rotate(180deg); width: 7px; height: 4px; background: url(../images/sprites.png) no-repeat -431px -12px;}
@@ -46,6 +47,6 @@
 .submenu ul li .eff{display: block; position: absolute; top: 16px; left: 150px; width: 30px; height: 1px; background: #fff; opacity: 0; transition: all 0.5s ease;}
 .submenu ul li:hover .eff{opacity: 1;}
 
-.gnb-bot{display: block; position: absolute; bottom: 5%; left: 20%; padding-top: 10px; border-top: 1px solid #fff;}
+.gnb-bot{display: block; position: absolute; bottom: 20px; left: 20%; padding-top: 10px; border-top: 1px solid #fff;}
 .gnb-bot a{margin-right: 5px;}
 
