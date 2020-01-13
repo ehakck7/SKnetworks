@@ -10,7 +10,7 @@
 /* display:none */
 .lang-wrap{display: none; position: absolute; top: 90px; right: 10px; z-index: 2;}
 .lang-wrap.on{display: block;}
-.lang-sub{width: 115px; height: 110px; padding: 13px; background: #fff;}
+.lang-sub{width: 115px; padding: 13px; background: #fff;}
 .lang-sub li{position: relative; line-height: 2;}
 .lang-sub li a{display: block; transition: all 0.3s ease;}
 .lang-sub li .eff{display: block; position: absolute; top: 16px; right: 15px; width: 30px; height: 1px; background: #ff646e; opacity: 0; transition: all 0.5s ease;}
@@ -20,15 +20,14 @@
 .tri{display: block; position: absolute; top: 0; left: 50%; width: 10px; height: 10px; background: #fff; transform: translate(-50%, -50%) rotate(45deg);}
 
 .lines{display: inline-block; position: relative; font-size: 0; line-height: 0; vertical-align: middle;}
-.lines .line1{display: block; width: 33px; height: 3px; background: #ff646e; margin-bottom: 10px;}
-.lines .line2{display: block; width: 33px; height: 3px; background: #ff646e; margin-bottom: 10px;}
-.lines .line3{display: block; width: 33px; height: 3px; background: #ff646e;}
+.lines > span{display: block; width: 33px; height: 3px; background: #ff646e; margin-bottom: 10px;}
+.lines > span:last-child{margin-bottom: 0;}
 
 /* gnb display:none */
 .gnb-wrap{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; color: #fff; background: rgba(255,255,255,0.5); z-index: 999;}
 .gnb-wrap.on{display: block;}
 .gnb-wrap a{color: #fff;}
-.gnb{position: relative; float: right; width: 450px; height: 100%; background: #ff646e; z-index: 9999;}
+.gnb{position: relative; float: right; width: 450px; height: 100%; margin-bottom: 30%; background: #ff646e; z-index: 9999;}
 
 .close-btn{display: block;  position: absolute; top: 40px; right: 20px; width: 33px; height: 33px;}
 .close-btn .line1{display: block; position: absolute; top: 50%; left: 0; width: 33px; height: 3px; background: #fff; transform: translate(0, -50%) rotate(45deg);}
