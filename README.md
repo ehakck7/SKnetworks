@@ -20,5 +20,8 @@
 
 **깨달은 점**
 1. 처음으로 만든 반응형 페이지라 section안에 컨텐츠를 감싸주는 태그가 없었음.<br>
-   ㄴ ```.wrap .inner{max-width: 70.5%; margin: 0 auto;} ``` 감싸주는 태그를 추가하여 정렬
+   ```css
+   .wrap .inner{max-width: 70.5%; margin: 0 auto;} 
+   ``` 
+   ㄴ 감싸주는 태그를 추가하여 정렬
 
